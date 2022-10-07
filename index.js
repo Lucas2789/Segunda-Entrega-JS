@@ -23,6 +23,10 @@ alert ("¡Bienvenido a la Pagina oficial de ARGENTUM!")
 
 let carrito = []
 
+let totalProductos = productos;
+localStorage.setItem("productos", JSON.stringify(totalProductos));
+console.log(localStorage.getItem("productos"));
+
 productos.forEach(producto => {
     let productoRenderizado = document.createElement("div")
     productoRenderizado.innerHTML = `
